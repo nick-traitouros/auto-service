@@ -14,6 +14,9 @@ CREATE TABLE Quotes (
 INSERT INTO Quotes (id, name, zip_code, date_of_birth, monthly_premium, created_at) VALUES (1, "Nick Traitouros", "11415", "1983-08-04", 612.47, "2022-06-10 20:11:22");
 INSERT INTO Quotes (id, name, zip_code, date_of_birth, monthly_premium, created_at) VALUES (2, "Bill Gates", "11803", "1977-04-04", 603.35, "2022-06-12 20:11:22");
 INSERT INTO Quotes (id, name, zip_code, date_of_birth, monthly_premium, created_at) VALUES (3, "Steve Jobs", "12561", "1975-08-04", 602.40, "2022-06-13 20:11:22");
+INSERT INTO Quotes (id, name, zip_code, date_of_birth, monthly_premium, created_at) VALUES (4, "Batman", "11415", "1983-08-04", 612.47, "2022-06-19 20:11:22");
+INSERT INTO Quotes (id, name, zip_code, date_of_birth, monthly_premium, created_at) VALUES (5, "Sheryl Sandberg", "90212", "1969-08-28", 603.35, "2022-06-19 20:11:22");
+INSERT INTO Quotes (id, name, zip_code, date_of_birth, monthly_premium, created_at) VALUES (6, "Larry Page", "00121", "1973-03-26", 602.40, "2022-06-19 20:11:22");
 
 --------------------------------------------------------------------------------
 -- Down
