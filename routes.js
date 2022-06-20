@@ -102,7 +102,7 @@ export default router;
  *         schema:
  *           type: string
  * 
- *       - in: path
+ *       - in: query
  *         name: name
  *         required: false
  *         description: filter for policies for a certain name
@@ -110,7 +110,7 @@ export default router;
  *         schema:
  *           type: string
 
- *       - in: path
+ *       - in: query
  *         name: zip_code
  *         required: false
  *         description: filter for policies in a certain zip code
@@ -118,7 +118,7 @@ export default router;
  *         schema:
  *           type: string
 
- *       - in: path
+ *       - in: query
  *         name: greater_than
  *         required: false
  *         description:  filter for policies with a six month cost greater than entered number
@@ -126,7 +126,7 @@ export default router;
  *         schema:
  *           type: integer
  * 
- *       - in: path
+ *       - in: query
  *         name: less_than
  *         required: false
  *         description: filter for policies with a six month cost less than entered number 
@@ -175,7 +175,7 @@ export default router;
  *     description: Search all quotes filtered by zip code, name, id and creation time or monthly_premium
  *     parameters: 
  * 
- *       - in: path
+ *       - in: query
  *         name: name
  *         required: false
  *         description: filter for policies for a certain name
@@ -183,7 +183,7 @@ export default router;
  *         schema:
  *           type: string
 
- *       - in: path
+ *       - in: query
  *         name: zip_code
  *         required: false
  *         description: filter for policies in a certain zip code
@@ -192,7 +192,7 @@ export default router;
  *           type: string
 
 
- *       - in: path
+ *       - in: query
  *         name: created_at
  *         required: false
  *         description: filter for policies by a certain creation time
@@ -201,7 +201,7 @@ export default router;
  *           type: datetime
 
 
- *       - in: path
+ *       - in: query
  *         name: monthly_premium
  *         required: false
  *         description: filter for policies by a certain monthly premium
@@ -209,7 +209,7 @@ export default router;
  *         schema:
  *           type: number
 
- *       - in: path
+ *       - in: query
  *         name: id
  *         required: false
  *         description: filter for policies by a certain id
