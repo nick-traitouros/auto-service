@@ -89,7 +89,7 @@ export default router;
 
 /**
  * @swagger
- * /quote/search/:hours:
+ * /quote/search/{hours}:
  *   get:
  *     summary: Retrieve a list of all recent quotes within a certain amount of hours.
  *     description: Search all quotes within the amount of hours passed in, also use parameters to filter these quotes
