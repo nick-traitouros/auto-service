@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "b7f07c95-5e7e-4650-b874-83f0c74d4ba3",
+		"name": "Auto Insurance Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21450011"
+	},
+	"item": [
+		{
+			"name": "Add Quote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "date_of_birth",
+							"value": "1983-08-04",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Joe Traitouros",
+							"type": "text"
+						},
+						{
+							"key": "zip_code",
+							"value": "11803",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/quote",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"quote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Premiums For This Month",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/premiums",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"premiums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Quotes Since Hours Ago",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/quote/search/100",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"quote",
+						"search",
+						"100"
+					],
+					"query": [
+						{
+							"key": "zip_code",
+							"value": "11803",
+							"disabled": true
+						},
+						{
+							"key": "greater_than",
+							"value": "100",
+							"disabled": true
+						},
+						{
+							"key": "less_than",
+							"value": "10000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Quotes By Params",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/quote/search",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"quote",
+						"search"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Nick Traitouros",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
